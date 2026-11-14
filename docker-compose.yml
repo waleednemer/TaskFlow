@@ -1,7 +1,7 @@
 
 services:
   web:
-    build: .
+    image: waleednemer/taskflow:latest
     container_name: taskflow_web
     restart: unless-stopped
 
@@ -15,7 +15,10 @@ services:
       db:
         condition: service_healthy
 
-    command: ["sh", "-c", "flask --app wsgi init-db && exec gunicorn --bind 0.0.0.0:8000 --workers 2 --access-logfile - --error-logfile - wsgi:app"]
+    command:
+      - sh
+      - -c
+      - flask --app wsgi init-db && exec gunicorn --chdir /app/backend --bind 0.0.0.0:8000 --workers 2 --access-logfile - --error-logfile - wsgi:app
 
   db:
     image: postgres:16-alpine
