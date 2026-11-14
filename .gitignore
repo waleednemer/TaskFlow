@@ -1,0 +1,39 @@
+# Secrets - never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+instance/
+
+# Local databases and data volumes
+*.db
+*.sqlite3
+pgdata/
+postgres-data/
+
+# Logs
+*.log
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Node (if tooling is added later)
+node_modules/
