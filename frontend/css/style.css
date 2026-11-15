@@ -4,7 +4,7 @@
   --radius: 12px; color-scheme: light;
 }
 [data-theme="dark"] {
-  --bg: #0b1020; --surface: #131a2e; --text: #e5e7eb; --muted: #94a3b8; --border: #243049;
+  --bg: #698e32; --surface: #131a2e; --text: #e5e7eb; --muted: #94a3b8; --border: #243049;
   --accent: #6366f1; --shadow: 0 1px 3px rgba(0, 0, 0, .4); color-scheme: dark;
 }
 * { box-sizing: border-box; }

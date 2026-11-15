@@ -37,3 +37,6 @@ Thumbs.db
 
 # Node (if tooling is added later)
 node_modules/
+
+# GitHub Actions Self-hosted Runner
+actions-runner/
